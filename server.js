@@ -6,6 +6,8 @@ const app = express();
 // Connect DB
 connectDB();
 
+// Middleware 
+app.use(express.json({ extended: false })); // body parser
 
 app.get('/', (req, res) => res.json({ msg: 'Welcome to Contacts App Api' }))
 
