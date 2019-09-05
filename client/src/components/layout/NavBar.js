@@ -6,7 +6,7 @@ const NavBar = ({ title, icon }) => {
     return (
         <div className="navbar bg-primary">
             <h1>
-                <i className={icon} />{title}
+                <i className={icon}></i>{title}
             </h1>
             <ul>
                 <li>
@@ -27,7 +27,7 @@ NavBar.propTypes = {
 
 NavBar.defaultProps = {
     title: 'My Contacts',
-    icon: 'fas fa-id-card-alt'
+    icon: 'fas fa-users'
 }
 
 export default NavBar
